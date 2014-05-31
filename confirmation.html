@@ -1,0 +1,226 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Whitewater Express Confirmation</title>
+   <style type="text/css">
+   	a {color: #4A72AF;}
+   	a.invert {color: #fff;}
+	body, #header h1, #header h2, p {margin: 0; padding: 0;}
+	#main {border: 1px solid #cfcece;}
+	img {display: block;}
+	#top-message p, #bottom-message p {color: #3f4042; font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+	#header h1 {color: #000000 !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; font-size: 24px; margin-bottom: 0!important; padding-bottom: 0; }
+	#header h2 {color: #ffffff !important; font-family: Arial, Helvetica, sans-serif; font-size: 24px; margin-bottom: 0 !important; padding-bottom: 0; }
+	#header p {color: #ffffff !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; font-size: 12px;  }
+	h1, h2, h3, h4, h5, h6 {margin: 0 0 0.8em 0;}
+	h3 {font-size: 28px; color: #444444 !important; font-family: Arial, Helvetica, sans-serif; }
+	h4 {font-size: 22px; color: #4A72AF !important; font-family: Arial, Helvetica, sans-serif; }
+	h5 {font-size: 18px; color: #444444 !important; font-family: Arial, Helvetica, sans-serif; }
+	p {font-size: 12px; color: #444444 !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; line-height: 1.5;}
+	p.header {font-size: 12px; color: #444444 !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; line-height: 0;}
+	table.background { background: url("http://www.whitewaterexpress.com/img/email_header.JPG") no-repeat; }
+   </style>
+</head>
+
+
+
+<body>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" bgcolor="e4e4e4"><tr><td>
+
+
+
+<table id="top-message" cellpadding="20" cellspacing="0" width="600" align="center">
+		<tr>
+			<td align="Center">
+				<p>&nbsp;</p>
+			</td>
+		</tr>
+	</table><!-- top message -->
+
+
+
+<table id="main" width="600" align="center" cellpadding="0" cellspacing="15" bgcolor="ffffff">
+		<tr>
+			<td>
+				<table id="header" class="background" cellpadding="10" cellspacing="0" align="center" >
+					<tr>
+						<td width="570" height="200" valign="bottom"><h1>Whitewater Express</h1></td>
+					</tr>
+					<tr>
+						<td width="570" bgcolor="7aa7e9"><p class="header">Your High Adventure Starts Here!</p></td>
+					</tr>
+					<tr>
+						<td width="570" align="right" bgcolor="000000"><p>Follow us: <a class="invert" href="http://www.facebook.com/WEChattahoochee">Facebook</a> - <a href="https://twitter.com/whitewaterexpre" class="invert">Twitter</a></p></td>
+					</tr>
+				</table><!-- header -->
+			</td>
+		</tr><!-- header -->
+
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<table id="content-1" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="570" valign="top">
+							<p><strong>Confirmation Number:</strong> <font color="red">%RESERVATIONID%</font><br />
+							<strong>Order Date:</strong> %RESDATE%<br /></p>	
+						</td>
+					</tr>
+				</table><!-- content 1 -->
+			</td>
+		</tr><!-- content 1 -->
+		<tr>
+			<td>
+				<table id="content-2" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="570" align="center"><h3>Reservation Summary</h3></td>
+					</tr>
+					<tr>
+						<td width="570">%ITINERARY%</td>
+					</tr>
+					<tr>
+						<td>
+							<table id="content-5" cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									<td width="300"></td>
+									<td width="250" align="right">
+										<table id="content-5" cellpadding="0" cellspacing="0" align="center">
+											<tr>
+												<td width="120">Subtotal:</td>
+												<td width="100" align="right">%SUBTOTAL%</td>
+											</tr>
+											<tr>
+												<td width="120">Discounts:</td>
+												<td width="100" align="right">%TOTALDISCOUNTS%</td>
+											</tr>
+											<tr>
+												<td width="120">Taxes/Fees:</td>
+												<td width="100" align="right">%TOTALTAX%</td>
+											</tr>	
+											<tr>
+												<td width="120">&nbsp;</td>
+												<td width="100" align="right"></td>
+											</tr>	
+											<tr>
+												<td width="120"><strong>Total Cost:</strong></td>
+												<td width="100" align="right"><strong>%TOTAL%</strong></td>
+											</tr>
+											<tr>
+												<td width="120">Total Paid:</td>
+												<td width="100" align="right">%PAYMENTS%</td>
+											</tr>	
+											<tr>
+												<td width="120"><strong>Balance Due:</strong></td>
+												<td width="100" align="right"><strong>%BALANCE%</strong></td>
+											</tr>		
+										</table>	
+									</td>	
+								</tr>
+							</table>	
+						</td>
+					</tr>	
+				</table><!-- content-2 -->
+			</td>
+		</tr><!-- content-2 -->
+		<tr>
+			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
+		</tr>
+		<tr>
+			<td>
+				<table id="content-3" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="570" align="center">
+							%PAYMENTSCHEDULE%
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>	
+						<td width="570" align="center">
+							%PAYMENTACTIVITY%
+						</td>
+					</tr>
+				</table><!-- content-3 -->
+			</td>
+		</tr><!-- content-3 -->
+		<tr>
+			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
+		</tr>
+		<tr>
+			<td>			
+				<table id="content-3" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
+							<a href="https://www.google.com/maps/preview?ll=32.465525,-84.995983&z=14&t=m&hl=en-US&gl=US&mapclient=embed&q=1000+Bay+Ave+Columbus,+GA+31901"><img src="http://maps.googleapis.com/maps/api/staticmap?center=1000+bay+avenue+columbus+ga&zoom=8&size=170x150&sensor=false" width="170" /></a>
+						</td>
+						<td width="15"></td>
+						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
+							<a href="http://www.whitewaterexpress.com/what-to-wear-rafting/"><img src="http://whitewaterexpress.com/img/wear.png" width="170" height="150" /></a>
+						</td>
+						<td width="15"></td>
+						<td width="170" valign="top" bgcolor="d0d0d0" style="padding:5px;">
+							<a href="https://wweonline.adventureres.com/Verify.aspx?locationId=1&action=Payment&reservationId=%RESERVATIONID%"><img src="http://whitewaterexpress.com/img/payment.jpg" /></a>
+						</td>
+					</tr>
+				</table><!-- content-3 -->
+			</td>
+		</tr><!-- content-3 -->
+		<tr>
+			<td>
+				<table id="content-4" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="180" valign="top">
+							<h5>Directions</h5>
+							<p><a href="https://www.google.com/maps/preview?ll=32.465525,-84.995983&z=14&t=m&hl=en-US&gl=US&mapclient=embed&q=1000+Bay+Ave+Columbus,+GA+31901">Here are directions to your adventure.</a></p>
+						</td>
+						<td width="15"></td>
+						<td width="180" valign="top">
+							<h5>What to wear</h5>
+							<p><a href="http://www.whitewaterexpress.com/what-to-wear-rafting/">Check out our online fashion tips</a> to make sure your rafting experience is as enjoyable as possible.  </p>
+						</td>
+						<td width="15"></td>
+						<td width="180" valign="top">
+							<h5>Make a payment</h5>
+							<p>Making a secure online payment is easy.  <a href="https://wweonline.adventureres.com/Verify.aspx?locationId=1&action=Payment&reservationId=%RESERVATIONID%">Just click here.</a></p>
+						</td>
+					</tr>
+				</table><!-- content-4 -->
+			</td>
+		</tr><!-- content-4 -->
+		<tr>
+			<td height="30"><img src="http://dummyimage.com/570x30/fff/fff" /></td>
+		</tr>
+		<tr>
+			<td>
+				<table id="content-5" cellpadding="0" cellspacing="0" align="center">
+					<tr>
+						<td width="270">
+							<p align="center"><strong>Outpost Address</strong><br /> 1000 Bay Avenue<br />Columbus, GA 31901<br />Tel: 706.321.4720</p>
+						</td>	
+						<td width="270">
+							<p align="center"><strong>Billing Address</strong><br /> 1549 Clairmont Road, Suite 201<br />Decatur, GA 30033<br />Tel: 404.325.5295</p>
+						</td>	
+				</table>
+			</td>
+		</tr>
+
+	</table><!-- main -->
+	<table id="bottom-message" cellpadding="20" cellspacing="0" width="600" align="center">
+		<tr>
+			<td align="center">
+				<p>&nbsp;</p>
+			</td>
+		</tr>
+	</table><!-- top message -->
+</td></tr></table><!-- wrapper -->
+
+
+
+</body>
+</html>

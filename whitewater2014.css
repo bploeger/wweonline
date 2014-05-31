@@ -1,0 +1,1085 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight:bold;
+}
+em {
+	font-style:italic
+}
+u {
+	text-decoration:none;
+}
+
+
+/*
+ *
+ *DEFAULT CSS
+ *
+ */
+	a:link {
+		color:#117ec2;
+		text-decoration:none;
+	}
+	a:hover {
+		cursor:pointer;
+		text-decoration:underline;
+	}
+	a:active {
+		color:#3399cc;
+	}
+	a:visited {
+		color:#117ec2;
+	}
+	a {
+		color:#117ec2;
+		cursor:pointer;
+		text-decoration:none;
+	}
+	.OnLineTable {
+		vertical-align:top;
+	}
+	.AdventureResLeftBorder {
+
+	}
+	.AdventureResRightBorder {
+	}
+	.AdventureResMainCell {
+	}
+
+	.blueBorderTable {
+		background-color:#ffffff;
+		border:1px solid #0066CC;
+		border-bottom:none;
+	}
+	blackBorderTable {
+		border:1px solid #000;
+	}
+	.blackBorderTableTop {
+		border:1px solid #000;
+		border-bottom:none;
+	}
+	.blackBorderTableBottom {
+		border:1px solid #000;
+		border-top:none;
+	}
+	.grayBorderTable {
+		border:1px solid #000;
+	}
+	.blackBottom {
+		border-bottom:solid 1px #000000;
+	}
+	.blackTop {
+		border-top:solid 1px #000000;
+	}
+	.blackLeft {
+		border-left:solid 1px #000000;
+	}
+	.blackRight {
+		border-right:solid 1px #000000;
+	}
+	.TableNoBorder {
+		border-left:none 0px transparent;
+		border-right:none 0px transparent;
+		border-top:none 0px transparent;
+		margin-left:0px;
+		padding-left:0px;
+	}
+	.Required {
+		color:Red;
+	}
+	.warning {
+		color:Red;
+	}
+	.Highlight {
+		background-color:#C1D2EE;
+		color:#000000;
+		cursor:pointer;
+	}
+	.Hand {
+		cursor:pointer;
+	}
+
+	.AdventureResDateHeader {
+		background-color:#006bc5;
+		border-bottom:solid 1px #000000;
+		border-left:solid 0px #000000;
+		border-right:solid 0px #000000;
+		border-top:solid 0px #000000;
+		color:White;
+		width:60px;
+		font-size:10px;
+	}
+	.AdventureResWeeklyDateHeader {
+		background-color:#006bc5;
+		font-size:12px;
+		text-align: left;
+		text-indent:10px;
+		border:none;
+		border-top:1px solid #999999;
+		border-left:1px solid #999999;
+		border-right:1px solid #999999;
+		color:White;
+		width:200px;
+		margin-top: 15px;
+	}
+	.AdventureResInactiveDateHeader {
+		background-color:Gray;
+		border-bottom:solid 1px #000000;
+		border-left:solid 0px #000000;
+		border-right:solid 0px #000000;
+		border-top:solid 0px #000000;
+		color:White;
+		width:60px;
+	}
+	.AdventureResDateHeaderSelected {
+		background-color:White;
+		border-bottom:solid 0px #FFFFFF;
+		border-left:solid 0px #FFFFFF;
+		border-right:solid 0px #FFFFFF;
+		border-top:solid 0px #FFFFFF;
+		color:Black;
+		cursor:pointer;
+		width:60px;
+		height:26px;
+	}
+	.AdventureResDateTable {
+		background-color:White;
+		border-bottom:solid 1px #000000;
+		border-left:solid 1px #000000;
+		border-right:solid 1px #000000;
+		border-top:solid 1px #000000;
+		color:Black;
+		width:60px;
+	}
+	.AdventureResInactiveDateTable {
+		background-color:White;
+		border-bottom:solid 1px #000000;
+		border-left:solid 1px #000000;
+		border-right:solid 1px #000000;
+		border-top:solid 1px #000000;
+		color:Black;
+		width:60px;
+	}
+	.AdventureResTimeCell {
+		height:48px;
+		width: 75px;
+		vertical-align:middle !important;
+		text-align:center;
+	}
+		.AdventureResTimeCell.active {
+			background:#52a552 !important;
+			color:#fff;
+		}
+	.AdventureResUnavailable, [id=AdventureResUnavailable] {
+		color:Red;
+		font-size:12px;
+	}
+	#ServiceTable .AdventureResUnavailable, #ServiceTable [id=AdventureResUnavailable], #ServiceTable font[color=red] {
+		display:block;
+		width:198px;
+		border:none;
+		border-left:1px solid #999999;
+		border-right:1px solid #999999;
+		margin:0 auto;
+		padding:0;
+		height:48px;
+		line-height:48px;
+	}
+		td.last [id=AdventureResUnavailable], tr.last .AdventureResUnavailable {
+			border-bottom:1px solid #999;
+		}
+	.AdventureResGroupHeader {
+	}
+	.AdventureResLeftBorder {
+	}
+	.AdventureResRightBorder {
+	}
+	.AdventureResReservationListTable {
+	}
+	.AdventureResReservationListHeader {
+	}
+	.AdventureResCustomerTable {
+	}
+	.AdventureResCustomerInformation {
+		color:black;
+		font-size:12px;
+	}
+	.AdventureResRatesTable {
+		border:none;
+		color:#333;
+		width:200px;
+		border-left:1px solid #999999;
+		border-right:1px solid #999999;
+	}
+	.AdventureResDateTable {
+		background-color:white;
+		border-bottom:solid 1px #000000;
+		border-left:solid 1px #000000;
+		border-right:solid 1px #000000;
+		border-top:solid 1px #000000;
+		color:Black;
+		width:60px;
+	}
+	.AdventureResWeeklyDateTable {
+		border:none;
+		color:#333;
+		width:200px;
+		height:48px;
+		border-left:1px solid #999999;
+		border-right:1px solid #999999;
+		line-height:12px;
+	}
+		.AdventureResWeeklyDateTable td[style="width:50px"] {
+			width:50% !important;
+		}
+		td.last .AdventureResWeeklyDateTable {
+			border-bottom:1px solid #999;
+		}
+		.AdventureResWeeklyDateTable font {
+			color:#333;
+			font-size:11px;
+		}
+		.AdventureResWeeklyDateTable select {
+			color:#333;
+			font-size:10px;
+		}
+		.AdventureResWeeklyDateTable.active {
+			background:#52a552 !important;
+		}
+			.AdventureResWeeklyDateTable.active font {
+				color:#fff	;
+			}
+	.AdventureResDay {
+		color:black;
+		font-family:Calibri;
+		font-size:26px;
+	}
+	.AdventureResInactiveDay {
+		color:black;
+		font-family:Calibri;
+		font-size:26px;
+	}
+	.AdventureResDaySelected {
+		color:black;
+		cursor:pointer;
+		font-family:Calibri;
+		font-size:30px;
+		font-weight:bold;
+	}
+	.AdventureResFooter {
+	}
+
+
+/*
+ *
+ *THEME SPECIFIC STYLES
+ *
+ */
+	html, body {
+		background:#f7f7f7 url(/Online/images/ss/footer.png) bottom repeat-x;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:13px;
+		line-height:20px;
+		color:#333;
+	}
+
+	form {
+		border-top:6px solid #006bc5;
+	}
+
+	#OnlineTable, #OnLineTable {
+		width:1170px !important;
+		margin:0 auto;
+		background:transparent !important;
+		position:relative;
+		text-align: left;
+	}
+
+	#ImageHeaderTable {
+		border:0;
+		padding:0;
+		margin:0;
+	}
+
+	.AdventureResLeftBorder, td.AdventureResLeftBorder {
+		width:0 !important;
+		background:transparent !important;
+	}
+
+	.AdventureResRightBorder, td.AdventureResRightBorder {
+		width:0 !important;
+		background:transparent !important;
+	}
+
+	.AdventureResMainCell {
+	}
+
+	.ssHeaderImage {
+		display:block;
+			width:1170px;
+			height:106px;
+			margin:0;
+			padding:0;
+	}
+		.ssHeaderImage img {
+			display:block;
+			width:1170px;
+			height:106px;
+			margin:0;
+			padding:0;
+		}
+
+
+
+	.ssSubheader {
+		width:1106px;
+		height:127px;
+		padding:0 32px;
+		text-align: left;
+		background:#f7f7f7 url(/Online/images/ss/subheader.jpg);
+	}
+
+		.ssYouAreHere {
+			height:42px;
+			line-height: 42px;
+			margin-bottom:3px;
+			color:#999;
+			text-align: left;
+		}
+			.ssDivider {
+				padding:0 10px;
+			}
+			.ssDividerSmall {
+				padding:0 5px;
+			}
+
+
+			.ssNavigation {
+			height:56px;
+			background:url(/Online/images/ss/navigation-bk.jpg) 0 0 repeat-x;
+		}
+
+			a.ssNavigationLink, .ssNavigationLink {
+				display: block;
+				float:left;
+				height:56px;
+				line-height:56px;
+				padding:0 20px;
+
+				border-right: 1px solid rgba(0, 0, 0, 0.15);
+				border-left: 1px solid rgba(255, 255, 255, 0.15);
+				background:url(/Online/images/ss/navigation-bk.jpg) 0 0 repeat-x;
+
+				font-weight: bold;
+				text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+				color: #ffffff;
+				font-size: 18px;
+
+			}
+				a.ssNavigationLink:hover, .ssNavigationLink:hover {
+					text-decoration: none;
+					background-position:0 -56px;
+				}
+
+			a.ssExistingUsersLink, #LoginLink {
+				position:absolute;
+				top:15px;
+				right:0;
+
+				display: block;
+				float:right;
+				height:56px;
+				line-height:56px;
+				width:172px;
+				padding-left:50px;
+
+				border-left: 1px solid rgba(0, 0, 0, 0.15);
+				background:url(/Online/images/ss/existing-users-btn.jpg) 0 0 repeat-x;
+
+				font-weight: bold;
+				text-shadow: 0 1px rgba(255, 255, 255, 0.7);
+				color: #000;
+				font-size: 14px;
+			}
+				a.ssExistingUsersLink:hover, #LoginLink:hover {
+					text-decoration: none;
+					background-position:0 -56px;
+				}
+			#LoginImage {
+				position:absolute;
+				display:none !important;
+			}
+
+	.ssFooterContainer {
+		clear:both;
+		height:318px;
+		margin-top:25px;
+	}
+	.ssFooter {
+		clear:both;
+		padding-top:23px;
+		height:245px;
+	}
+	.ssPoweredBy {
+		margin-top:17px;
+	}
+	#PoweredBy {
+		display:none;
+	}
+
+	.AdventureResStatusBar {
+		/*position:absolute;
+		top:207px;
+		left:32px;*/
+
+		width:1104px !important;
+		height:65px;
+		margin:0;
+		padding:0;
+
+		background:transparent;
+		border:none !important;
+
+		color:#999999;
+		font-size:18px;
+		font-weight:bold;
+		vertical-align: middle;
+	}
+		.AdventureResStatusBar td {
+			text-align:left;
+			height:65px;
+			width:368px;
+			padding:0;
+			margin:0;
+			vertical-align: middle;
+		}
+		.AdventureResStatusBar td.Link {
+			cursor:pointer;
+			color:#006bc5;
+			text-decoration: none;
+		}
+	.AdventureResStatusBarSelected {
+		color:#000;
+		cursor:pointer;
+	}
+
+/*AVAILABILITY*/
+#Activity {
+	margin-bottom: 10px;
+}
+
+/*RESERVATION INFORMATION TABLE*/
+#AttributesTable {
+	border:1px solid #ccc !important;
+	background:#fff;
+}
+	#AttributesTable #topMiddle {
+		background:#006bc5 !important;
+		color:#fff;
+	}
+
+	#AttributesTable td {
+		padding:3px 5px;
+		vertical-align: middle;
+		border-left:none !important;
+		border-top:none !important;
+		border-bottom:none !important;
+	}
+
+	#AttributesTable #ageDescription {
+		font-size:12px;
+		line-height:14px;
+		color:#999
+	}
+
+	#AttributesTable #ValuesTable {
+		border:none !important;
+	}
+
+	/*search button*/
+	#AttributesTable #NextImage {
+
+		font-weight: bold;
+		text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+		color: #ffffff;
+		font-size: 14px;
+
+		border:0;
+		padding:0;
+		margin:0;
+		height:38px;
+		width:135px;
+
+		/*background:url(/Online/images/ss/search.jpg) 0 0 no-repeat;*/
+	}
+		#AttributesTable #NextImage:hover {
+			background-position:0 -38px;
+			cursor: pointer;
+		}
+
+.ssTitle, .AdventureResGroupHeader, .AdventureResServiceDescription {
+	border-bottom:3px double #dddddd;
+	padding-bottom:10px;
+	margin-top:15px;
+	margin-bottom:10px;
+	font-size:20px;
+	font-weight:normal;
+	color:#333333;
+	text-align: left;
+
+}
+	.ssTitle.ssBlueText, .AdventureResServiceDescription {
+		color:#006bc5;
+	}
+	.ssFooter .ssTitle {
+		border-bottom:3px double #bababa;
+	}
+
+.ssFooterCell {
+	padding-top:25px;
+	width:275px;
+	float:left;
+	margin-left:50px;
+}
+.ssList a {
+	display:block;
+	font-size:14px;
+	line-height: 24px;
+	text-align: left;
+}
+	.ssFooter .ssList a {
+		color:#333333;
+	}
+
+td[valign="top"] {
+	vertical-align: top;
+}
+td[valign="middle"] {
+	vertical-align: middle;
+}
+#PackageGroupTable, #ServiceGroupTable {
+	width:315px;
+}
+	#PackageGroupTable a, #ServiceGroupTable a {
+		display:block;
+		height:24px;
+		line-height:24px;
+	}
+
+#Table1, #Table2, #Table3, #Table5, #Table6, #LoginTable, .AdventureResItineraryTable {
+	width:1110px !important;
+	margin-bottom:32px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*ACTIVITY PAGE*/
+
+
+#PackageLink {
+	display:inline-block;
+	width:180px;
+	text-align: right;
+}
+#DDText {
+	text-align: right;
+	width:275px !important;
+}
+#DDText + td {
+	width:435px !important;
+	line-height:20px;
+}
+#GoImage {
+	background:url(/Online/images/ss/go.jpg) 0 0 no-repeat;
+	width:42px;
+	height:20px;
+	line-height:20px;
+	color:#fff;
+	display:inline-block;
+	vertical-align: middle;
+	margin-left:5px;
+	position:relative;
+	top:-3px;
+}
+	#GoImage:hover {
+		background-position:0 -20px;
+	}
+
+/*select instructions -- class may be used elsewhere*/
+.AdventureResResultCell {
+	display:none;
+}
+
+/*calendar and next prev*/
+#ServiceTable.simple, #PackageTable.simple {
+	position:absolute;
+	top:371px;
+	left:490px;
+}
+.AdventureResInactiveDateTable, .AdventureResDateTable {
+	margin-top: 25px;
+	margin-right:5px;
+}
+.AdventureResServiceTable {
+	margin-top:25px;
+}
+/*#NextDaysLink {
+	text-align: left;
+	position:absolute;
+	left:690px;
+	top:390px;
+	font-size:12px;
+	width:100px;
+	display:block;
+}
+#NextWeekLink {
+	text-align: left;
+	position:absolute;
+	left:690px;
+	top:405px;
+	font-size:12px;
+	width:100px;
+	display:block;
+}
+#PrevDaysLink {
+	position:absolute;
+	left:380px;
+	top:390px;
+	font-size:12px;
+	text-align: right;
+	width:100px;
+	display:block;
+}
+#PrevWeekLink {
+	position:absolute;
+	left:380px;
+	top:405px;
+	font-size:12px;
+	text-align: right;
+	width:100px;
+	display:block;
+}*/
+
+/*#AddTripTop {
+	display:none;
+}*/
+
+/*RESERVE Button*/
+#AddTripImage, #AddTripImage1 {
+	display:none;
+}
+
+#AddTripLink {
+	margin-top:-8px;
+	margin-bottom:35px;
+}
+
+#AddTripLink, #AddTripLink1 {
+	display:block;
+	width:245px;
+	padding:15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+
+	*zoom: 1;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+
+	background-color: #5bb75b !important;
+	background-image: -moz-linear-gradient(top, #62c462, #51a351);
+	background-image: -ms-linear-gradient(top, #62c462, #51a351);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+	background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+	background-image: -o-linear-gradient(top, #62c462, #51a351);
+	background-image: linear-gradient(top, #62c462, #51a351);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+	border:1px solid #51a351;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #51a351 !important;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-weight:bold;
+	font-size:14px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+#AddTripLink:hover, #AddTripLink1:hover,
+#AddTripLink:active, #AddTripLink1:active,
+#AddTripLink[disabled], #AddTripLink1[disabled] {
+  background-color: #51a351 !important;
+  *background-color: #499249 !important;
+  background-color: #408140  !important \9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  text-decoration:none;
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+
+}
+
+
+/*TRIP TABLES*/
+.ssDisplayDate {
+	margin-left:140px;
+	color:#333;
+	font-size:12px;
+	line-height:18px;
+	font-weight:bold;
+}
+.AdventureResTimeTable {
+	margin-left:140px;
+	width:800px !important;
+	color:#333;
+	font-size:12px;
+	line-height:18px;
+}
+.AdventureResTimeHeader td {
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+.AdventureResTimeTable td {
+	height:24px;
+	line-height:24px;
+	vertical-align: middle !important;
+}
+	.AdventureResTimeTable tr:nth-child(even) {
+		background:#fff;
+	}
+	.AdventureResTimeTable .even {
+		background:#fff;
+	}
+.AdventureResServiceDetails {
+	width:800px !important;
+	text-align: left;
+	color:#333;
+	font-size:12px;
+	line-height:18px;
+}
+.AdventureResServiceDetailsLeftImage {
+	width:140px !important;
+	text-align: left;
+}
+.AdventureResServiceDetailsRightImage {
+	width:160px !important;
+	text-align: right;
+}
+span[id^="msg"] {
+	position:absolute;
+	font-size:10px;
+	background:#006bc5;
+	color:#fff;
+	display:inline-block;
+	height:15px;
+	line-height:15px;
+	border-radius:2px;
+	margin-top:2px;
+}
+
+/*ITINERARY*/
+#ItineraryTable, #IntineraryTable {
+	width:1110px !important;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+	font-size:100%;
+}
+#ItineraryTable td {
+	vertical-align:top;
+}
+
+#ItineraryTable tr:first-child td:first-child {
+	text-align:left !important;
+	font-size:20px  !important;
+	font-weight:bold;
+	letter-spacing:-1px;
+	color:#333;
+}
+
+.AdventureResItineraryHeader td {
+	font-weight:bold;
+	border-bottom:1px solid #cccccc;
+}
+
+
+.AdventureResItineraryDate, td.AdventureResItineraryDate {
+	font-size:18px;
+	letter-spacing:-1px;
+	color:#333;
+	font-weight:normal;
+	padding-top:20px;
+	border-bottom:1px solid #cccccc;
+}
+
+.AdventureResItineraryComments {
+	font-size:10px;
+	color:#999;
+	line-height:12px;
+}
+.ssItineraryCommentWrapper {
+	width:530px;
+}
+
+img[src="/images/greencheck.gif"] {
+	max-width:40px;
+}
+
+.ssGrandTotal {
+	font-weight:bold;
+	font-size:16px;
+	padding-top:10px;
+}
+.ssSmallText {
+	font-size:12px;
+	font-weight:normal;
+	line-height:8px;
+	display:block;
+}
+
+
+#FinishImage,
+#AddTripImage,
+#AddTripImage1,
+#CheckoutImage,
+#AddMoreImage,
+#QuoteImage
+{
+	display:none;
+}
+
+.AdventureResItineraryDescription {
+	font-weight:bold;
+	padding-top:10px;
+}
+
+
+#CheckoutLink, #FinishLink {
+	background-color: #5bb75b !important;
+	background-image: -moz-linear-gradient(top, #62c462, #51a351);
+	background-image: -ms-linear-gradient(top, #62c462, #51a351);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+	background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+	background-image: -o-linear-gradient(top, #62c462, #51a351);
+	background-image: linear-gradient(top, #62c462, #51a351);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+	border:1px solid #51a351;
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #51a351 !important;
+}
+
+#AddMoreLink {
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #2f96b4;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	border:1px solid #2f96b4;
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #2f96b4 !important;
+}
+
+#QuoteLink {
+	display:none;
+	background-color: #faa732;
+	background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+	background-image: -ms-linear-gradient(top, #fbb450, #f89406);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+	background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+	background-image: -o-linear-gradient(top, #fbb450, #f89406);
+	background-image: linear-gradient(top, #fbb450, #f89406);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+	border-color: #f89406 #f89406 #ad6704;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #f89406;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	border:1px solid #f89406;
+	border-color: #f89406 #f89406 #ad6704;;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #f89406 !important;
+}
+
+
+#AddMoreLink,
+#CheckoutLink,
+#QuoteLink,
+#FinishLink {
+	display:block;
+	width:245px;
+	padding:15px 0;
+	max-height:50px;
+
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+
+	*zoom: 1;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-weight:bold;
+	font-size:14px;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+#CheckoutLink:hover, #FinishLink:hover {
+  background-color: #51a351 !important;
+  *background-color: #499249 !important;
+  background-color: #408140  !important \9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  text-decoration:none;
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+
+}
+
+#AddMoreLink:hover {
+  background-color: #2f96b4 !important;
+  *background-color: #2f96b4 !important;
+  background-color: #2f96b4  !important \9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  text-decoration:none;
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+
+}
+
+#QuoteLink:hover {
+  background-color: #f89406 !important;
+  *background-color: #f89406 !important;
+  background-color: #f89406  !important \9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  text-decoration:none;
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+
+}
+
+/*PAYMENT*/
+#PaymentHeader, .ssPageTitle {
+	font-size:20px !important;
+	font-weight: bold;
+	text-align:left;
+}
+#PolicyTable tr:first-child td:first-child {
+	vertical-align:bottom;
+	font-size:12px !important;
+	font-weight:bold;
+	text-align:left;
+}
+#policyText {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+#FinishLink {
+	margin-bottom:25px;
+}

@@ -1,0 +1,77 @@
+<footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<table width="100%">
+	<tr>
+		<td width="65%">
+			1549 Clairmont Road, Suite 201<br />
+			Decatur, GA 30033<br />
+			Tel: 800.676.7238<br />
+			Copyright &copy; 2014 Whitewater Express, Inc. All rights reserved.
+		</td>
+		<td width="30%">
+			<a href="http://www.whitewaterexpress.com/privacy-policy/">Privacy Policy</a><br />
+			<a href="http://www.whitewaterexpress.com/terms-and-conditions/">Terms and Conditions</a><br />
+			<!-- (c) 2005, 2014. Authorize.Net is a registered trademark of CyberSource Corporation --> 
+			<div class="AuthorizeNetSeal"> 
+				<script type="text/javascript" language="javascript">
+					var ANS_customer_id="0d6a3f2a-2ddd-4949-9ed1-2e5a6164dcf2";
+				</script> 
+				<script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js" ></script> 
+				<a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Accept Credit Card Payments</a> 
+			</div>
+		</td>
+	</tr>
+	</table>			
+</footer> <!-- end footer -->
+</td>
+</tr>
+
+<link href='https://wweonline.adventureres.com/online/Location1/bootstrap-wwe2014.min.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" language="javascript" src="https://wweonline.adventureres.com/online/Location1/bootstrap-wwe2014.min.js" ></script> 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50930231-1', 'adventureres.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+	$( document ).ready(function() {
+		//Check for Columbus
+	     if (getURLParameter('locationId') == 1) {
+	     	$("#FeeCell").attr("rel", "popover");
+	     	$("#FeeCell").attr("data-trigger", "hover click");
+	     	$("#FeeCell").attr("data-placement", "right");
+	     	$("#FeeCell").attr("title", "Worry-Free Reservations");
+	     	$('#FeeCell').attr("data-content", "With our Worry-Free Reservations you can cancel your trip for a full refund (less this fee) up to 1:00pm the day before your trip.  You also have the ability to reschedule your trip for any reason up to the scheduled start time.");
+
+	     	if (getURLParameter('action') != 'QUOTE') {
+				$('#wtbIdRow').after('<tr id="localLodgingRow"><td align="left"><span class="Required">* </span> Are you staying in a hotel during your trip?</td><td align="left"><select name="localLodging"><option value="0">No</option><option value="1">Yes, 1 Night</option><option value="2">Yes, 2 Nights</option><option value="3">Yes, 3 Nights</option><option value="4">Yes, More than 3 Nights</option></select></td> </tr><tr><td></td><td>&nbsp;</td></tr>');
+	     	}	
+
+	     	//Appearance
+	     	$('#PaymentRow').after('<tr id="markettingspacerrow1"><td></td><td>&nbsp;</td></tr>');
+	     	$('#wtbIdLabel').html('<span class="Required">* </span> What led you to book with us?');
+
+	     	$('#FeeRow').after('<tr id="feespacerrow1"><td></td><td>&nbsp;</td></tr>');
+	     	$('#policyRow > #policyAccept').after('<span class="required">I Accept the policies listed above.</span>');
+	     	$('#QuoteLink').remove();
+	     }
+	     $('#FeeCell').popover();
+	       
+	});
+
+	function getURLParameter(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+	    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+
+</script>
